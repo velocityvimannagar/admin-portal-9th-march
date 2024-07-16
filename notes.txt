@@ -1,0 +1,21 @@
+SASS 
+- SASS stands for Syntactically Awesome Style Sheets.
+- Supports variables, function, and mixins. Nested styling.
+- Syntax is different from CSS.
+- CSS Preprocessor
+
+
+SCSS
+- SCSS stands for Sassy CSS.
+
+
+Enable SCSS
+- Install sass 
+npm install sass
+rename all css files to scss
+
+
+
+Add Material UI:
+npm install @mui/material @emotion/react @emotion/styled
+npm install @fontsource/roboto
