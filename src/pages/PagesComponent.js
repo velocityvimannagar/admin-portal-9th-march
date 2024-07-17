@@ -7,9 +7,10 @@ export function PagesComponent(){
     const isAuthenticated = useAuth();
     console.log(isAuthenticated)
     useEffect(()=>{
-        if(!isAuthenticated){
-            navigate('/login') 
-        }
+        // console.log('Navigate back')
+        // if(!isAuthenticated){
+        //     navigate('/login') 
+        // }
     }, [])
    
     return <div>
