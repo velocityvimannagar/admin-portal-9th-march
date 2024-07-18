@@ -29,6 +29,7 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import Collapse from '@mui/material/Collapse';
 import StarBorder from '@mui/icons-material/StarBorder';
+import { CategoriesComponent } from "./categories/CategoriesComponent";
 const drawerWidth = 240;
 
 export function PagesComponent() {
@@ -144,7 +145,7 @@ export function PagesComponent() {
                     <Routes>
                         <Route path='/' element={<Navigate to={"dashboard"} replace={true} />}></Route>
                         <Route path="dashboard" element={<div>Dashboard component</div>}></Route>
-                        <Route path="categories" element={<div>Categories component</div>}></Route>
+                        <Route path="categories/*" element={<CategoriesComponent></CategoriesComponent>}></Route>
                         <Route path="products" element={<div>Products component</div>}></Route>
                         <Route path="orders" element={<div>Orders component</div>}></Route>
                         <Route path="users" element={<div>Users component</div>}></Route>
