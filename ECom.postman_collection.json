@@ -1,0 +1,602 @@
+{
+	"info": {
+		"_postman_id": "4a368db5-8f05-43f7-b173-85a524236e26",
+		"name": "ECom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27083932"
+	},
+	"item": [
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get Categories List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/categories",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post a category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": \"6\",\n        \"name\": \"Electronics\",\n        \"description\": \"Explore a wide range of electronic items\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/categories",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/categories/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": 1,\n        \"name\": \"Electronics\",\n        \"description\": \"Explore a wide range of electronic items\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/categories/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": 1,\n        \"name\": \"Electronics\",\n        \"description\": \"Explore a wide range of electronic items\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/categories/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sub Categories",
+			"item": [
+				{
+					"name": "Get SubCategories List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/subCategories",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"subCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post a subCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"id\": \"50\",\n        \"categoryId\": null,\n        \"name\": \"Smartphones\",\n        \"description\": \"Browse the latest smartphones\",\n        \"imageUrl\": \"https://example.com/images/smartphones.jpg\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/subCategories",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"subCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get subCategories By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/subCategories/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"subCategories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a subCategories",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"id\": \"50\",\n        \"categoryId\": null,\n        \"name\": \"Smartphones\",\n        \"description\": \"Browse the latest smartphones\",\n        \"imageUrl\": \"https://example.com/images/smartphones.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/subCategories/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"subCategories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete subCategories",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/subCategories/50",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"subCategories",
+								"50"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get Products List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/products",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post a Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": \"1\",\n        \"productName\": \"Wireless Earbuds\",\n        \"imageUrl\": \"https://example.com/images/earbuds.jpg\",\n        \"createdAt\": \"2024-03-15T12:00:00Z\",\n        \"status\": \"In Stock\",\n        \"rating\": 4.5,\n        \"isFeatured\": true,\n        \"subCategoryId\": \"1\",\n        \"sizes\": [\n            \"One Size\"\n        ],\n        \"colors\": [\n            \"Black\",\n            \"White\"\n        ],\n        \"tags\": [\n            \"Wireless\",\n            \"Bluetooth\",\n            \"Audio\"\n        ],\n        \"productCode\": \"WB001\",\n        \"productSku\": \"EARBUDS001\",\n        \"gender\": \"Others\",\n        \"availableQuantity\": 100,\n        \"regularPrice\": 49.99,\n        \"salePrice\": 39.99\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/products",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/products/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": \"1\",\n        \"productName\": \"Wireless Earbuds\",\n        \"imageUrl\": \"https://example.com/images/earbuds.jpg\",\n        \"createdAt\": \"2024-03-15T12:00:00Z\",\n        \"status\": \"In Stock\",\n        \"rating\": 4.5,\n        \"isFeatured\": true,\n        \"subCategoryId\": \"1\",\n        \"sizes\": [\n            \"One Size\"\n        ],\n        \"colors\": [\n            \"Black\",\n            \"White\"\n        ],\n        \"tags\": [\n            \"Wireless\",\n            \"Bluetooth\",\n            \"Audio\"\n        ],\n        \"productCode\": \"WB001\",\n        \"productSku\": \"EARBUDS001\",\n        \"gender\": \"Others\",\n        \"availableQuantity\": 100,\n        \"regularPrice\": 49.99,\n        \"salePrice\": 39.99\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/products/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/products/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get Users List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post a User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": \"1\",\n        \"productName\": \"Wireless Earbuds\",\n        \"imageUrl\": \"https://example.com/images/earbuds.jpg\",\n        \"createdAt\": \"2024-03-15T12:00:00Z\",\n        \"status\": \"In Stock\",\n        \"rating\": 4.5,\n        \"isFeatured\": true,\n        \"subCategoryId\": \"1\",\n        \"sizes\": [\n            \"One Size\"\n        ],\n        \"colors\": [\n            \"Black\",\n            \"White\"\n        ],\n        \"tags\": [\n            \"Wireless\",\n            \"Bluetooth\",\n            \"Audio\"\n        ],\n        \"productCode\": \"WB001\",\n        \"productSku\": \"EARBUDS001\",\n        \"gender\": \"Others\",\n        \"availableQuantity\": 100,\n        \"regularPrice\": 49.99,\n        \"salePrice\": 39.99\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/users",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"1\",\n    \"imageUrl\": \"https://example.com/images/user1.jpg\",\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"email\": \"john.doe@example.com\",\n    \"phone\": \"+1234567890\",\n    \"status\": \"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/users/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Get Order List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/orders",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post a Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": \"1\",\n        \"productId\": \"1\",\n        \"createdAt\": \"2024-03-15T09:00:00Z\",\n        \"status\": \"Shipped\",\n        \"price\": 39.99,\n        \"quantity\": 2,\n        \"orderedBy\": \"3\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/orders",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/orders/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"orders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Order",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": \"1\",\n        \"productId\": \"1\",\n        \"createdAt\": \"2024-03-15T09:00:00Z\",\n        \"status\": \"Shipped\",\n        \"price\": 39.99,\n        \"quantity\": 2,\n        \"orderedBy\": \"3\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/orders/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"orders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/orders/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"orders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:3001"
+		}
+	]
+}

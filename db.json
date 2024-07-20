@@ -1,0 +1,554 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Electronics",
+      "description": "Explore a wide range of electronic items"
+    },
+    {
+      "id": "2",
+      "name": "Clothing",
+      "createdAt": "2024-03-14T09:30:00Z",
+      "description": "Discover trendy clothing for all ages"
+    },
+    {
+      "id": "3",
+      "name": "Home & Garden",
+      "createdAt": "2024-03-14T09:30:00Z",
+      "description": "Find everything you need for your home and garden"
+    },
+    {
+      "id": "4",
+      "name": "Books",
+      "createdAt": "2024-03-14T09:30:00Z",
+      "description": "Dive into a world of literature"
+    },
+    {
+      "id": "5",
+      "name": "Sports",
+      "createdAt": "2024-03-14T09:30:00Z",
+      "description": "Gear up for your favorite sports"
+    },
+    {
+      "id": "7",
+      "name": "Electronics",
+      "description": "Explore a wide range of electronic items"
+    }
+  ],
+  "subCategories": [
+    {
+      "id": "1",
+      "categoryId": "1",
+      "name": "Smartphones",
+      "description": "Browse the latest smartphones",
+      "imageUrl": "https://example.com/images/smartphones.jpg"
+    },
+    {
+      "id": "2",
+      "categoryId": "1",
+      "name": "Laptops",
+      "description": "Choose from a variety of laptops",
+      "imageUrl": "https://example.com/images/laptops.jpg"
+    },
+    {
+      "id": "3",
+      "categoryId": "1",
+      "name": "Accessories",
+      "description": "Enhance your devices with accessories",
+      "imageUrl": "https://example.com/images/accessories.jpg"
+    },
+    {
+      "id": "4",
+      "categoryId": "2",
+      "name": "Men's Fashion",
+      "description": "Stay stylish with our men's fashion range",
+      "imageUrl": "https://example.com/images/mens_fashion.jpg"
+    },
+    {
+      "id": "5",
+      "categoryId": "2",
+      "name": "Women's Fashion",
+      "description": "Explore the latest trends in women's fashion",
+      "imageUrl": "https://example.com/images/womens_fashion.jpg"
+    },
+    {
+      "id": "6",
+      "categoryId": "3",
+      "name": "Furniture",
+      "description": "Furnish your home with our furniture range",
+      "imageUrl": "https://example.com/images/furniture.jpg"
+    },
+    {
+      "id": "7",
+      "categoryId": "3",
+      "name": "Garden Tools",
+      "description": "Equip your garden with the right tools",
+      "imageUrl": "https://example.com/images/garden_tools.jpg"
+    },
+    {
+      "id": "8",
+      "categoryId": "4",
+      "name": "Fiction",
+      "description": "Immerse yourself in captivating fiction",
+      "imageUrl": "https://example.com/images/fiction.jpg"
+    },
+    {
+      "id": "9",
+      "categoryId": "4",
+      "name": "Non-Fiction",
+      "description": "Expand your knowledge with non-fiction",
+      "imageUrl": "https://example.com/images/nonfiction.jpg"
+    },
+    {
+      "id": "10",
+      "categoryId": "5",
+      "name": "Fitness",
+      "description": "Get ready for fitness activities",
+      "imageUrl": "https://example.com/images/fitness.jpg"
+    },
+    {
+      "id": "11",
+      "categoryId": "5",
+      "name": "Outdoor Sports",
+      "description": "Gear up for outdoor sports adventures",
+      "imageUrl": "https://example.com/images/outdoor_sports.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "productName": "Jeans",
+      "imageUrl": "https://example.com/images/jeans.jpg",
+      "createdAt": "2024-03-14T09:30:00Z",
+      "status": "In Stock",
+      "rating": 4.2,
+      "isFeatured": true,
+      "subCategoryId": "4",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Blue",
+        "Black"
+      ],
+      "tags": [
+        "Denim",
+        "Fashion",
+        "Jeans"
+      ],
+      "productCode": "DJ002",
+      "productSku": "JEANS002",
+      "gender": "Men",
+      "availableQuantity": 50,
+      "regularPrice": 59.99,
+      "salePrice": 49.99
+    },
+    {
+      "id": "2",
+      "productName": "Slim Fit Denim Jeans",
+      "imageUrl": "https://example.com/images/jeans.jpg",
+      "createdAt": "2024-03-14T09:30:00Z",
+      "status": "In Stock",
+      "rating": 4.2,
+      "isFeatured": true,
+      "subCategoryId": "4",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Blue",
+        "Black"
+      ],
+      "tags": [
+        "Denim",
+        "Fashion",
+        "Jeans"
+      ],
+      "productCode": "DJ002",
+      "productSku": "JEANS002",
+      "gender": "Men",
+      "availableQuantity": 50,
+      "regularPrice": 59.99,
+      "salePrice": 49.99
+    },
+    {
+      "id": "3",
+      "productName": "Yoga Mat",
+      "imageUrl": "https://example.com/images/yoga_mat.jpg",
+      "createdAt": "2024-03-13T15:45:00Z",
+      "status": "Low Stock",
+      "rating": 4.7,
+      "isFeatured": false,
+      "subCategoryId": "10",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Purple",
+        "Green"
+      ],
+      "tags": [
+        "Yoga",
+        "Fitness",
+        "Exercise"
+      ],
+      "productCode": "YM003",
+      "productSku": "YOGAMAT003",
+      "gender": "Others",
+      "availableQuantity": 10,
+      "regularPrice": 29.99,
+      "salePrice": 24.99
+    },
+    {
+      "id": "4",
+      "productName": "Running Shoes",
+      "imageUrl": "https://example.com/images/runningshoes.jpg",
+      "createdAt": "2024-03-12T11:20:00Z",
+      "status": "In Stock",
+      "rating": 4.6,
+      "isFeatured": true,
+      "subCategoryId": "11",
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10"
+      ],
+      "colors": [
+        "Red",
+        "Black"
+      ],
+      "tags": [
+        "Running",
+        "Sports",
+        "Shoes"
+      ],
+      "productCode": "RS004",
+      "productSku": "RUNSHOES004",
+      "gender": "Men",
+      "availableQuantity": 30,
+      "regularPrice": 79.99,
+      "salePrice": 69.99
+    },
+    {
+      "id": "5",
+      "productName": "Casual T-shirt",
+      "imageUrl": "https://example.com/images/tshirt.jpg",
+      "createdAt": "2024-03-11T14:10:00Z",
+      "status": "In Stock",
+      "rating": 4,
+      "isFeatured": false,
+      "subCategoryId": "5",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "White",
+        "Black",
+        "Blue"
+      ],
+      "tags": [
+        "Casual",
+        "Fashion",
+        "T-shirt"
+      ],
+      "productCode": "CT005",
+      "productSku": "TSHIRT005",
+      "gender": "Men",
+      "availableQuantity": 60,
+      "regularPrice": 19.99,
+      "salePrice": 14.99
+    },
+    {
+      "id": "6",
+      "productName": "Bluetooth Speaker",
+      "imageUrl": "https://example.com/images/speaker.jpg",
+      "createdAt": "2024-03-10T13:25:00Z",
+      "status": "In Stock",
+      "rating": 4.8,
+      "isFeatured": true,
+      "subCategoryId": "1",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Black",
+        "Red"
+      ],
+      "tags": [
+        "Bluetooth",
+        "Speaker",
+        "Audio"
+      ],
+      "productCode": "BS006",
+      "productSku": "SPEAKER006",
+      "gender": "Others",
+      "availableQuantity": 20,
+      "regularPrice": 89.99,
+      "salePrice": 79.99
+    },
+    {
+      "id": "7",
+      "productName": "Summer Dress",
+      "imageUrl": "https://example.com/images/summerdress.jpg",
+      "createdAt": "2024-03-09T10:50:00Z",
+      "status": "In Stock",
+      "rating": 4.3,
+      "isFeatured": true,
+      "subCategoryId": "5",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Yellow",
+        "Blue",
+        "Pink"
+      ],
+      "tags": [
+        "Summer",
+        "Fashion",
+        "Dress"
+      ],
+      "productCode": "SD007",
+      "productSku": "SUMMERDRESS007",
+      "gender": "Women",
+      "availableQuantity": 40,
+      "regularPrice": 39.99,
+      "salePrice": 34.99
+    },
+    {
+      "id": "8",
+      "productName": "Digital Camera",
+      "imageUrl": "https://example.com/images/camera.jpg",
+      "createdAt": "2024-03-08T16:15:00Z",
+      "status": "In Stock",
+      "rating": 4.9,
+      "isFeatured": true,
+      "subCategoryId": "1",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Black",
+        "Silver"
+      ],
+      "tags": [
+        "Digital",
+        "Camera",
+        "Photography"
+      ],
+      "productCode": "DC008",
+      "productSku": "CAMERA008",
+      "gender": "Others",
+      "availableQuantity": 15,
+      "regularPrice": 299.99,
+      "salePrice": 249.99
+    },
+    {
+      "id": "9",
+      "productName": "Leather Wallet",
+      "imageUrl": "https://example.com/images/wallet.jpg",
+      "createdAt": "2024-03-07T09:40:00Z",
+      "status": "In Stock",
+      "rating": 4.6,
+      "isFeatured": true,
+      "subCategoryId": "3",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "tags": [
+        "Leather",
+        "Wallet",
+        "Accessories"
+      ],
+      "productCode": "LW009",
+      "productSku": "WALLET009",
+      "gender": "Men",
+      "availableQuantity": 25,
+      "regularPrice": 49.99,
+      "salePrice": 39.99
+    },
+    {
+      "id": "10",
+      "productName": "Gardening Gloves",
+      "imageUrl": "https://example.com/images/gloves.jpg",
+      "createdAt": "2024-03-06T11:55:00Z",
+      "status": "In Stock",
+      "rating": 4.4,
+      "isFeatured": false,
+      "subCategoryId": "7",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Green",
+        "Yellow"
+      ],
+      "tags": [
+        "Gardening",
+        "Gloves",
+        "Tools"
+      ],
+      "productCode": "GG010",
+      "productSku": "GLOVES010",
+      "gender": "Others",
+      "availableQuantity": 35,
+      "regularPrice": 9.99,
+      "salePrice": 7.99
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "productId": "1",
+      "createdAt": "2024-03-15T09:00:00Z",
+      "status": "Shipped",
+      "price": 39.99,
+      "quantity": 2,
+      "orderedBy": "3"
+    },
+    {
+      "id": "2",
+      "productId": "3",
+      "createdAt": "2024-03-14T12:30:00Z",
+      "status": "Delivered",
+      "price": 24.99,
+      "quantity": 1,
+      "orderedBy": "4"
+    },
+    {
+      "id": "3",
+      "productId": "5",
+      "createdAt": "2024-03-13T15:45:00Z",
+      "status": "New",
+      "price": 14.99,
+      "quantity": 3,
+      "orderedBy": "5"
+    },
+    {
+      "id": "4",
+      "productId": "8",
+      "createdAt": "2024-03-12T10:20:00Z",
+      "status": "Shipped",
+      "price": 249.99,
+      "quantity": 1,
+      "orderedBy": "1"
+    },
+    {
+      "id": "5",
+      "productId": "10",
+      "createdAt": "2024-03-11T11:00:00Z",
+      "status": "New",
+      "price": 7.99,
+      "quantity": 4,
+      "orderedBy": "2"
+    },
+    {
+      "id": "6",
+      "productId": "2",
+      "createdAt": "2024-03-10T14:20:00Z",
+      "status": "New",
+      "price": 49.99,
+      "quantity": 2,
+      "orderedBy": "3"
+    },
+    {
+      "id": "7",
+      "productId": "4",
+      "createdAt": "2024-03-09T16:45:00Z",
+      "status": "Shipped",
+      "price": 69.99,
+      "quantity": 1,
+      "orderedBy": "4"
+    },
+    {
+      "id": "8",
+      "productId": "6",
+      "createdAt": "2024-03-08T18:30:00Z",
+      "status": "New",
+      "price": 79.99,
+      "quantity": 1,
+      "orderedBy": "5"
+    },
+    {
+      "id": "9",
+      "productId": "7",
+      "createdAt": "2024-03-07T20:15:00Z",
+      "status": "New",
+      "price": 34.99,
+      "quantity": 2,
+      "orderedBy": "1"
+    },
+    {
+      "id": "10",
+      "productId": "9",
+      "createdAt": "2024-03-06T22:00:00Z",
+      "status": "Delivered",
+      "price": 39.99,
+      "quantity": 1,
+      "orderedBy": "2"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "imageUrl": "https://example.com/images/user1.jpg",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+1234567890",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://example.com/images/user2.jpg",
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "email": "alice.smith@example.com",
+      "phone": "+1987654321",
+      "status": "active"
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://example.com/images/user3.jpg",
+      "firstName": "Michael",
+      "lastName": "Johnson",
+      "email": "michael.johnson@example.com",
+      "phone": "+1122334455",
+      "status": "active"
+    },
+    {
+      "id": "4",
+      "imageUrl": "https://example.com/images/user4.jpg",
+      "firstName": "Emily",
+      "lastName": "Brown",
+      "email": "emily.brown@example.com",
+      "phone": "+1445577889",
+      "status": "active"
+    },
+    {
+      "id": "5",
+      "imageUrl": "https://example.com/images/user5.jpg",
+      "firstName": "David",
+      "lastName": "Wilson",
+      "email": "david.wilson@example.com",
+      "phone": "+1777888999",
+      "status": "active"
+    }
+  ]
+}

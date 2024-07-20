@@ -1,11 +1,28 @@
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import moment from 'moment';
+import { useEffect } from "react";
+import { setMainCategories } from "../../../store/mainCategorySlice";
+import axios from 'axios';
+
 
 export function MainCategoriesList() {
     const mainCategories = useSelector(store => store.mainCategories)
+    const dispatch = useDispatch();
+    useEffect(() => {
+        // API Call
+        axios.get('http://localhost:3001/categories')
+            .then(function (response) {
+                // handle success
+                const data = response.data;
+                dispatch(setMainCategories(data))
+            })
+            .catch(function (error) {
+                // handle error
+                console.log("There is an error", error);
+            })
+    }, [])
     return <div>
-
         <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
                 <TableHead>

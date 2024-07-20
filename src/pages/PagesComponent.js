@@ -35,9 +35,7 @@ const drawerWidth = 240;
 export function PagesComponent() {
     const navigate = useNavigate();
     const isAuthenticated = useAuth();
-    console.log(isAuthenticated)
     useEffect(() => {
-        // console.log('Navigate back')
         // if(!isAuthenticated){
         //     navigate('/login') 
         // }
