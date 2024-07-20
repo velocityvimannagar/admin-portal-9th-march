@@ -33,12 +33,23 @@
       "id": "7",
       "name": "Electronics",
       "description": "Explore a wide range of electronic items"
+    },
+    {
+      "id": 83,
+      "name": "Books",
+      "description": "Books"
+    },
+    {
+      "id": 83,
+      "name": "Bottles",
+      "description": "Bottles"
     }
   ],
   "subCategories": [
     {
       "id": "1",
       "categoryId": "1",
+      "totalItems": 2,
       "name": "Smartphones",
       "description": "Browse the latest smartphones",
       "imageUrl": "https://example.com/images/smartphones.jpg"
@@ -47,6 +58,7 @@
       "id": "2",
       "categoryId": "1",
       "name": "Laptops",
+      "totalItems": 2,
       "description": "Choose from a variety of laptops",
       "imageUrl": "https://example.com/images/laptops.jpg"
     },
@@ -54,6 +66,7 @@
       "id": "3",
       "categoryId": "1",
       "name": "Accessories",
+      "totalItems": 2,
       "description": "Enhance your devices with accessories",
       "imageUrl": "https://example.com/images/accessories.jpg"
     },
@@ -61,6 +74,7 @@
       "id": "4",
       "categoryId": "2",
       "name": "Men's Fashion",
+      "totalItems": 2,
       "description": "Stay stylish with our men's fashion range",
       "imageUrl": "https://example.com/images/mens_fashion.jpg"
     },
@@ -68,6 +82,7 @@
       "id": "5",
       "categoryId": "2",
       "name": "Women's Fashion",
+      "totalItems": 2,
       "description": "Explore the latest trends in women's fashion",
       "imageUrl": "https://example.com/images/womens_fashion.jpg"
     },
@@ -76,6 +91,7 @@
       "categoryId": "3",
       "name": "Furniture",
       "description": "Furnish your home with our furniture range",
+      "totalItems": 2,
       "imageUrl": "https://example.com/images/furniture.jpg"
     },
     {
@@ -83,12 +99,14 @@
       "categoryId": "3",
       "name": "Garden Tools",
       "description": "Equip your garden with the right tools",
+      "totalItems": 2,
       "imageUrl": "https://example.com/images/garden_tools.jpg"
     },
     {
       "id": "8",
       "categoryId": "4",
       "name": "Fiction",
+      "totalItems": 2,
       "description": "Immerse yourself in captivating fiction",
       "imageUrl": "https://example.com/images/fiction.jpg"
     },
@@ -96,6 +114,7 @@
       "id": "9",
       "categoryId": "4",
       "name": "Non-Fiction",
+      "totalItems": 2,
       "description": "Expand your knowledge with non-fiction",
       "imageUrl": "https://example.com/images/nonfiction.jpg"
     },
@@ -103,6 +122,7 @@
       "id": "10",
       "categoryId": "5",
       "name": "Fitness",
+      "totalItems": 2,
       "description": "Get ready for fitness activities",
       "imageUrl": "https://example.com/images/fitness.jpg"
     },
@@ -110,6 +130,7 @@
       "id": "11",
       "categoryId": "5",
       "name": "Outdoor Sports",
+      "totalItems": 2,
       "description": "Gear up for outdoor sports adventures",
       "imageUrl": "https://example.com/images/outdoor_sports.jpg"
     }
