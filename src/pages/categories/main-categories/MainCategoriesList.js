@@ -17,9 +17,6 @@ export function MainCategoriesList({getCategories}) {
     const [categoryToDelete, setCategoryToDelete] = useState(null);
 
     const deleteCategory = () => {
-        // API
-        // categoryToDelete
-        // setCategoryToDelete(null)
         axios.delete(`${API_BASE_URL}/categories/${categoryToDelete}`)
             .then(function (response) {
                 // handle success

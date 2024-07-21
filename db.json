@@ -118,6 +118,20 @@
       "totalItems": 2,
       "description": "Gear up for outdoor sports adventures",
       "imageUrl": "https://example.com/images/outdoor_sports.jpg"
+    },
+    {
+      "id": 73,
+      "name": "SUbCat1",
+      "description": "SUbCat1",
+      "categoryId": "3",
+      "imageUrl": "https://m.media-amazon.com/images/I/51NNA+k9S0L._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": 44,
+      "name": "Sub Cat 2",
+      "description": "Sub Cat 2",
+      "categoryId": "5",
+      "imageUrl": "https://m.media-amazon.com/images/I/51NNA+k9S0L._AC_UF894,1000_QL80_.jpg"
     }
   ],
   "products": [
