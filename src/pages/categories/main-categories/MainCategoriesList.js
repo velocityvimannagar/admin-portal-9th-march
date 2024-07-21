@@ -2,15 +2,49 @@ import { Button, Paper, Table, TableBody, TableCell, TableContainer, TableHead, 
 import { useDispatch, useSelector } from "react-redux"
 import moment from 'moment';
 import { useNavigate } from "react-router-dom";
+import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
+import ConfirmationDialog from "../../../components/ConfirmationDialog";
+import { useState } from "react";
+import axios from "axios";
+import { API_BASE_URL } from "../../../utils/ApiConstants";
+// import { createPortal } from "react-dom";
 
 
-
-export function MainCategoriesList() {
+export function MainCategoriesList({getCategories}) {
     const mainCategories = useSelector(store => store.mainCategories)
     const navigate = useNavigate();
-   
+    const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
+    const [categoryToDelete, setCategoryToDelete] = useState(null);
+
+    const deleteCategory = () => {
+        // API
+        // categoryToDelete
+        // setCategoryToDelete(null)
+        axios.delete(`${API_BASE_URL}/categories/${categoryToDelete}`)
+            .then(function (response) {
+                // handle success
+                alert('Category delted!');
+                getCategories();
+            })
+            .catch(function (error) {
+                // handle error
+                console.log("There is an error", error);
+            }).finally(() => {
+                setCategoryToDelete(null)
+            })
+    }
+
     return <div>
-        <Button variant="contained" onClick={()=>{
+        <ConfirmationDialog title="Confirm?" description="Do you want to delete?" open={deleteDialogOpen} handleClose={(flag) => {
+            setDeleteDialogOpen(false);
+            if (flag) {
+                deleteCategory();
+            } else {
+                setCategoryToDelete(null)
+            }
+        }} ></ConfirmationDialog>
+        {/* {createPortal( <div>I am in Main Categories: {deleteDialogOpen+''} </div>, document.body)} */}
+        <Button variant="contained" onClick={() => {
             navigate('create')
         }}> Add Category</Button>
         <br></br>
@@ -36,7 +70,10 @@ export function MainCategoriesList() {
                             </TableCell>
                             <TableCell >{row.description}</TableCell>
                             <TableCell>{moment(row.createdAt).format('DD MMM YYYY')}</TableCell>
-                            <TableCell><div>Actions</div></TableCell>
+                            <TableCell><DeleteOutlineOutlinedIcon onClick={() => {
+                                setDeleteDialogOpen(true)
+                                setCategoryToDelete(row.id)
+                            }}></DeleteOutlineOutlinedIcon></TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

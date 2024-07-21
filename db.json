@@ -28,21 +28,6 @@
       "name": "Sports",
       "createdAt": "2024-03-14T09:30:00Z",
       "description": "Gear up for your favorite sports"
-    },
-    {
-      "id": "7",
-      "name": "Electronics",
-      "description": "Explore a wide range of electronic items"
-    },
-    {
-      "id": 83,
-      "name": "Books",
-      "description": "Books"
-    },
-    {
-      "id": 83,
-      "name": "Bottles",
-      "description": "Bottles"
     }
   ],
   "subCategories": [

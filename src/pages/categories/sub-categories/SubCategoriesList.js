@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import axios from 'axios';
 import { setSubCategories } from "../../../store/subCategorySlice";
 import { API_BASE_URL } from "../../../utils/ApiConstants";
+import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 
 export function SubCategoriesList() {
     const dispatch = useDispatch();
@@ -55,7 +56,7 @@ export function SubCategoriesList() {
                             <TableCell >{row.mainCategory}</TableCell>
                             <TableCell >{row.totalItems}</TableCell>
                             <TableCell>{moment(row.createdAt).format('DD MMM YYYY')}</TableCell>
-                            <TableCell><div>Actions</div></TableCell>
+                            <TableCell><DeleteOutlineOutlinedIcon></DeleteOutlineOutlinedIcon></TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
