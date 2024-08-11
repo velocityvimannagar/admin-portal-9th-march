@@ -10,7 +10,7 @@ import { API_BASE_URL } from "../../../utils/ApiConstants";
 // import { createPortal } from "react-dom";
 
 
-export function MainCategoriesList({getCategories}) {
+export default function MainCategoriesList({getCategories}) {
     const mainCategories = useSelector(store => store.mainCategories)
     const navigate = useNavigate();
     const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);

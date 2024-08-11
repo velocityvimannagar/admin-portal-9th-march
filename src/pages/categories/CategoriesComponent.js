@@ -1,13 +1,15 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { SubCategoriesList } from "./sub-categories/SubCategoriesList";
-import { MainCategoriesList } from "./main-categories/MainCategoriesList";
+// import { MainCategoriesList } from "./main-categories/MainCategoriesList";
 import { CreateMainCategory } from "./main-categories/CreateMainCategory";
 import { CreateSubCategory } from "./sub-categories/CreateSubCategory";
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { setMainCategories } from "../../store/mainCategorySlice";
 import axios from 'axios';
 import { useDispatch } from "react-redux";
 import { API_BASE_URL } from "../../utils/ApiConstants";
+const  MainCategoriesList = lazy(()=> import("./main-categories/MainCategoriesList"));
+
 
 export function CategoriesComponent(){
     const dispatch = useDispatch();
@@ -31,7 +33,9 @@ export function CategoriesComponent(){
     }, [])
     return <Routes>
         <Route path='/' element={<Navigate to={"main-categories"} replace={true} />}></Route>
-        <Route path="main-categories" element={<MainCategoriesList getCategories={getCategories}/>}> </Route>
+        <Route path="main-categories" element={<Suspense fallback={<div>Loading Categories....</div>}>
+            <MainCategoriesList getCategories={getCategories}/>
+        </Suspense>}> </Route>
         <Route path="main-categories/create" element={<CreateMainCategory getCategories={getCategories}/>}> </Route>
         <Route path="sub-categories" element={<SubCategoriesList />}></Route>
         <Route path="sub-categories/create" element={<CreateSubCategory />}></Route>

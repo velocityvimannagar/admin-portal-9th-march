@@ -30,9 +30,10 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import Collapse from '@mui/material/Collapse';
 import StarBorder from '@mui/icons-material/StarBorder';
 import { CategoriesComponent } from "./categories/CategoriesComponent";
+import { ProductsWrapper } from "./products/ProductWrapper";
 const drawerWidth = 240;
 
-export function PagesComponent() {
+export default function PagesComponent() {
     const navigate = useNavigate();
     const isAuthenticated = useAuth();
     useEffect(() => {
@@ -40,6 +41,7 @@ export function PagesComponent() {
         //     navigate('/login') 
         // }
     }, [])
+    
 
     const theme = useTheme();
     const [open, setOpen] = React.useState(true);
@@ -144,7 +146,7 @@ export function PagesComponent() {
                         <Route path='/' element={<Navigate to={"dashboard"} replace={true} />}></Route>
                         <Route path="dashboard" element={<div>Dashboard component</div>}></Route>
                         <Route path="categories/*" element={<CategoriesComponent></CategoriesComponent>}></Route>
-                        <Route path="products" element={<div>Products component</div>}></Route>
+                        <Route path="products/*" element={<ProductsWrapper></ProductsWrapper>}></Route>
                         <Route path="orders" element={<div>Orders component</div>}></Route>
                         <Route path="users" element={<div>Users component</div>}></Route>
                     </Routes>
